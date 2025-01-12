@@ -19,4 +19,23 @@ public class Post {
     @ManyToOne
     @JoinColumn(name = "author_id")
     private User author;
+
+    // Getters
+
+    public Instant getTimestamp() {
+        return timestamp;
+    }
+
+    public int getReactions() {
+        return reaction;
+    }
+
+    public int getComments() {
+        return comments;
+    }
+
+    public int getShares() {
+        return shares;
+    }
+
 }
